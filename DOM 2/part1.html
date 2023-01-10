@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Without form</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter number"/>
+    <input id="in" type="number" placeholder="Enter number"/>
+    <button id="btn">Submit</button>
+    
+</body>
+</html>
+
+<script>
+
+    document.querySelector("#btn").addEventListener("click",getData);
+
+        function getData(){
+            let n1 = document.querySelector("input").value;
+            let n2 = document.querySelector("#in").value;
+
+            console.log(n1+n2);
+        }
+    
+</script>

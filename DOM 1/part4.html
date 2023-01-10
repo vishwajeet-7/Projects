@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change heading</title>
+</head>
+<body>
+    <!-- <h1 id="head">Vishwajeet Singh</h1> -->
+    <button id="head"> Log in </button>
+</body>
+</html>
+
+<script>
+
+    let btn = document.getElementById("head");
+    console.log(btn);
+    btn.addEventListener("click",changeHeading);
+
+    function changeHeading(){
+        if(document.getElementById("head").innerHTML == "Log out"){
+            document.getElementById("head").innerHTML = "Log in";
+        }
+        else{
+            document.getElementById("head").innerHTML = "Log out";
+        }
+        
+    }
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With forms</title>
+</head>
+<body>
+    <form>
+
+        <input type="number" placeholder="Enter number"/>
+        <input id="in" type="number" placeholder="Enter number"/>
+        <input type="Submit"/>
+
+    </form>
+
+    <h1></h1>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",getData);
+
+    function getData(){
+        event.preventDefault();
+        let num1 = document.querySelector("input").value;
+        let num2 = document.querySelector("#in").value;
+
+        // document.querySelector("h1").textContent = num1;
+        let head = document.createElement("h1");
+        head.textContent = num1;
+
+        document.querySelector("body").append(head) = num1;
+
+        // console.log(head);
+    }
+
+    
+</script>

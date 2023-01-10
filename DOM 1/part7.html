@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <h1 id="head">This is heading</h1>
+    <p class="para"> This is a paragraph</p>
+    <div>This is a box</div>
+
+    <p class="pa">I am Vishwajeet Singh</p>
+    <p class="pa">I want to be full stack developer</p>
+    <p class="pa">I want to solve problems</p>
+</body>
+</html>
+
+<script>
+    let head = document.querySelector("#head");
+    console.log(head);
+    let para = document.querySelector(".para");
+    console.log(para);
+
+    let p = document.querySelectorAll(".pa");
+    for(let i=0; i<p.length; i++){
+        p[i].style.color = "red";
+    }
+    console.log(p);
+</script>

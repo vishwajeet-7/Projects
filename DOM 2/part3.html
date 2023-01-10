@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <h1>Masai School</h1>
+</body>
+</html>
+
+<script>
+    let names = document.createElement("h1");
+    names.textContent = "Vishwajeet";
+
+    let title = document.createElement("h2");
+    title.textContent = "Singh";
+
+    let div = document.createElement("div");
+    div.append(names,title);
+    div.style.display = "flex";
+
+    let btn = document.createElement("button");
+    btn.textContent = "click";
+
+    document.querySelector("body").append(div,btn);
+
+    // document.querySelector("body").append(names,title);
+
+
+</script>

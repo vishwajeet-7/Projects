@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select options</title>
+</head>
+<body>
+    <select id="gender">
+        <option value=""> Select Gender</option>
+        <option value="Male"> Male</option>
+        <option value="Female"> Female</option>
+        <option value="Shemale"> Others</option>
+    </select>
+
+    <button onclick="catchVal()">Choose</button>
+    
+</body>
+</html>
+
+<script>
+    function catchVal(){
+        let gender = document.getElementById("gender").value;
+        console.log(gender);
+    }
+</script>
