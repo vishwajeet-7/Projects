@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attribute</title>
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vishwajeet Singh</h1>
+    <img src="https://content.shop4reebok.com/static/Product-FW0318/reebok_FW0318_1.jpg.plp ">
+</body>
+</html>
+
+<script>
+    let element = document.querySelector("h1");
+    element.setAttribute("id","head");
+
+    let pic = document.createElement("img");
+    pic.setAttribute("src","https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    document.querySelector("body").append(pic);
+    pic.setAttribute("alt","evening");
+
+    let link = document.createElement("a");
+    link.setAttribute("href","https://course.masaischool.com");
+    link.textContent = "Masai School";
+    document.querySelector("body").append(link);
+</script>

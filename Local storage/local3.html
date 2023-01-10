@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes & Dislikes</title>
+    <style>
+      img{
+         width: 30%;
+      }
+      body{
+
+      }
+      button{
+         font-size: 20px;
+         text-decoration: none;
+         background-color: blue;
+         color: white;
+         border: none;
+         padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/bulldog-1047518_960_720.jpg" alt="pic">
+    <br>
+    <h1>Likes:<span id="like"></span></h1>
+    <h1>Dislikes:<span id="dis"></span></h1>
+    <br>
+    <button id="lkebtn">Like</button>
+    <button id="dlkbtn">Dislike</button>
+    
+</body>
+</html>
+<script>
+ document.querySelector("#lkebtn").addEventListener("click",likeFun);
+ var likeCount;
+ if(localStorage.getItem("likeCount") == null){
+    likeCount = 0;
+ }
+ else{
+    likeCount = localStorage.getItem("likeCount");
+ }
+ document.getElementById("like").textContent = likeCount;
+ function likeFun(){
+    likeCount++;
+    console.log(likeCount);
+    localStorage.setItem("likeCount",likeCount);
+    document.querySelector("#like").textContent = likeCount;
+ }
+
+ document.querySelector("#dlkbtn").addEventListener("click",dislikeFun);
+ var dislikeCount = localStorage.getItem("dislikeCount") || 0;
+
+ document.querySelector("#dis").textContent = dislikeCount;
+ 
+ function dislikeFun(){
+    dislikeCount++;
+    console.log(dislikeCount);
+    localStorage.setItem("dislikeCount",dislikeCount);
+    document.querySelector("#dis").textContent = dislikeCount;
+ }
+</script>
