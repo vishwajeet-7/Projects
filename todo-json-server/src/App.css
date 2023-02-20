@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.page-content{
+  display: flex;
+  gap: 1rem;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.App>h1{
+  background: blue;
+    border-radius: 20px;
+    padding: 24px;
+    font-size: 50px;
+    color: white;
+}
+.icons-container{
+  display: flex;
+  gap: 1rem;
+}
+.todo-card{
+  margin: 10px auto;
+}
+.add-btn{
+  background: blue;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+  width: 60px;
+  color: white;
+}
+.add-btn>svg{
+  font-size: 35px;
+}
+.input-box{
+  width: 400px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background: skyblue;
+  color: blue;
+  border: none;
+  box-shadow: 0 0 5px;
+  font-weight: 400;
+}
