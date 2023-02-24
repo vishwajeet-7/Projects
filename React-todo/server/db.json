@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "name": "Wake up",
+            "status":false
+        },
+        {
+            "id": 2,
+            "name": "Exercise",
+            "status":false
+        },
+        {
+            "id": 3,
+            "name": "Breakfast",
+            "status":false
+        }
+    ]
+}
